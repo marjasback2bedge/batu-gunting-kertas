@@ -11,3 +11,4 @@ def func(winDifference, lastChoice, lastRoundWL):
 
     # return from 1 to 3, 1 means paper, 2 means scissors, 3 means stone
 ```
+u can build your own function depends on what index u want to rely on
