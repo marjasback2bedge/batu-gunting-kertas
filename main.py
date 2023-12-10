@@ -21,14 +21,14 @@ def main():
     winState1 = 0
     winState2 = 0
     while player1_wins < 5 and player2_wins < 5:
-        input()
+        input("Press any buttom to continue")
         player1_choice = func(player2_wins - player1_wins, tmpPlayer2_choice, winState1)
         player2_choice = func(player1_wins - player2_wins, tmpPlayer1_choice, winState2)
         tmpPlayer1_choice = player1_choice
         tmpPlayer2_choice = player2_choice
-        print(f"player1: {Choice(player1_choice).name}")
+        print(f"Group1: {Choice(player1_choice).name}")
         time.sleep(2)
-        print(f"player2: {Choice(player2_choice).name}")
+        print(f"Group2: {Choice(player2_choice).name}")
         time.sleep(2)
         winState1 = 0 
         winState2 = 0
@@ -38,19 +38,19 @@ def main():
             player1_wins += 1
             winState1 = 1
             winState2 = 2
-            print("Player 1 wins!")
+            print("Group1 wins!")
         else:
             player2_wins += 1
             winState2 = 1
             winState1 = 2
-            print("Player 2 wins!")
+            print("Group2 wins!")
         time.sleep(2)
-        print(f"\nplayer1 won {player1_wins}, and player2 won {player2_wins}\n")
+        print(f"\nGroup1 won {player1_wins}, and Group2 won {player2_wins}\n")
 
     if player1_wins == 5:
-        print("Player1 won the game!")
+        print("Group1 won the game!")
     else:
-        print("Player2 won the game!")
+        print("Group2 won the game!")
 
 main()  
 
