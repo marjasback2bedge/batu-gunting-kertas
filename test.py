@@ -31,3 +31,14 @@ def test_func():
     print("All tests passed")
 
 test_func()
+
+def test():
+    for i in range(-4, 5):
+        for j in range(1, 4):
+            for k in range(0, 3):
+                result = func(i, j, k)
+                print(f"{i}, {j}, {k}")
+                assert result in [1, 2, 3], f"Test {i}, {j}, {k} failed"
+    print("All tests passed")    
+
+test()
