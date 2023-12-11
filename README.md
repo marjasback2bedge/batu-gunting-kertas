@@ -12,3 +12,7 @@ def func(winDifference, lastChoice, lastRoundWL):
     # return from 1 to 3, 1 means paper, 2 means scissors, 3 means stone
 ```
 u can build your own function depends on what index u want to rely on
+
+# test ur function
+replace line 3 to line 7 in `test.py` with the function u build
+and it will test ur function of there is nothing wrong
