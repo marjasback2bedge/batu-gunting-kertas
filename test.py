@@ -7,30 +7,6 @@ def func(winDifference, lastChoice, lastRoundWL):
     return random.randint(1, 3)
 
 
-def test_func():
-    # Test with winDifference = -4, lastChoice = 1, lastRoundWL = 0
-    result = func(-4, 1, 0)
-    assert result in [1, 2, 3], "Test 1 failed"
-
-    # Test with winDifference = 0, lastChoice = 2, lastRoundWL = 1
-    result = func(0, 2, 1)
-    assert result in [1, 2, 3], "Test 2 failed"
-
-    # Test with winDifference = 4, lastChoice = 3, lastRoundWL = 2
-    result = func(4, 3, 2)
-    assert result in [1, 2, 3], "Test 3 failed"
-
-    # Test with winDifference = 2, lastChoice = 1, lastRoundWL = 0
-    result = func(2, 1, 0)
-    assert result in [1, 2, 3], "Test 4 failed"
-
-    # Test with winDifference = -3, lastChoice = 2, lastRoundWL = 1
-    result = func(-3, 2, 1)
-    assert result in [1, 2, 3], "Test 5 failed"
-
-    print("All tests passed")
-
-test_func()
 
 def test():
     for i in range(-4, 5):
