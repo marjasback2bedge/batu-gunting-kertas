@@ -45,7 +45,7 @@ def main():
             winState2 = 1
             winState1 = 2
             print("\nGroup2 wins!")
-        time.sleep(2)
+        time.sleep(1.5)
         print(f"\nGroup1 won {player1_wins}, and Group2 won {player2_wins}\n")
         print("--------------------------")
     if player1_wins == 5:
