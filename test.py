@@ -4,7 +4,6 @@ def func(winDifference, lastChoice, lastRoundWL):
     # winDifference from -4 to 4
     # lastChoice from 1 to 3, 1 means paper, 2 means scissors, 3 means stone
     # lasrRound WL from 0 to 2, 0 means draw, 1 means win, 2 means loss
-    return random.randint(1, 3)
 
 
 
